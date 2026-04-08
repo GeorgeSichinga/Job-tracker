@@ -40,11 +40,11 @@ Next.js frontend for JobWatch job tracking application with TypeScript, Tailwind
 ## Code Standards
 
 ### General Rules
-- ✅ TypeScript for all components and utilities
-- ✅ Absolute imports: `@/components`, `@/lib`, etc.
-- ✅ "use client" directive for interactive components
-- ✅ Responsive design with Tailwind CSS mobile-first
-- ✅ Named exports for components
+-  TypeScript for all components and utilities
+-  Absolute imports: `@/components`, `@/lib`, etc.
+-  "use client" directive for interactive components
+-  Responsive design with Tailwind CSS mobile-first
+-  Named exports for components
 
 ### Component Patterns
 ```typescript
@@ -188,11 +188,11 @@ docker run -p 3000:3000 jobwatch-frontend
 ## Testing & QA
 
 Before deployment:
-- ✅ Test all routes load correctly
-- ✅ Verify animations smooth on low-end devices
-- ✅ Check mobile responsiveness
-- ✅ Test backend API connectivity
-- ✅ Verify build completes: `npm run build`
+-  Test all routes load correctly
+-  Verify animations smooth on low-end devices
+- Check mobile responsiveness
+- Test backend API connectivity
+-  Verify build completes: `npm run build`
 
 ## Resources
 
