@@ -60,7 +60,7 @@ src/
 -  Dynamic shader background animations
 -  Docker deployment ready
 
-## 📡 Backend Integration
+##  Backend Integration
 
 Connects to Flask API on port 5000:
 - `GET /api/jobs` - Fetch job listings
