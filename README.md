@@ -2,7 +2,7 @@
 
 A modern, animated Next.js frontend for the JobWatch job tracking application. Features real-time job tracking, application management, and interactive dashboards with smooth Framer Motion animations.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 24+
@@ -39,7 +39,7 @@ src/
     └── api.ts              # Backend API client
 ```
 
-## 🛠 Technology Stack
+##  Technology Stack
 
 | Category | Tools |
 |----------|-------|
@@ -51,14 +51,14 @@ src/
 | **Backend** | Flask API |
 | **Deployment** | Docker + Render |
 
-## ✨ Features
+##  Features
 
-- 🎨 Smooth animations with Framer Motion
-- 📊 Interactive job dashboard
-- 🔍 Smart search and filtering
-- 📱 Fully responsive design
-- 🌊 Dynamic shader background animations
-- 🐳 Docker deployment ready
+-  Smooth animations with Framer Motion
+-  Interactive job dashboard
+-  Smart search and filtering
+-  Fully responsive design
+-  Dynamic shader background animations
+-  Docker deployment ready
 
 ## 📡 Backend Integration
 
@@ -68,7 +68,7 @@ Connects to Flask API on port 5000:
 - `POST /api/jobs/<id>/applied` - Mark as applied
 - `POST /api/cv/process` - Process CV uploads
 
-## 🐳 Docker & Deployment
+##  Docker & Deployment
 
 Build locally:
 ```bash
@@ -82,14 +82,14 @@ git push origin main
 # Auto-deploys via render.yaml
 ```
 
-## 📝 Environment Variables
+##  Environment Variables
 
 Create `.env.local`:
 ```
 NEXT_PUBLIC_API_URL=http://localhost:5000
 ```
 
-## 🧹 Commands
+##  Commands
 
 | Command | Purpose |
 |---------|----------|
@@ -98,6 +98,4 @@ NEXT_PUBLIC_API_URL=http://localhost:5000
 | `npm start` | Production server |
 | `npm run lint` | Run ESLint |
 
-## 📄 License
 
-MIT
