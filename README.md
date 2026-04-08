@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JobWatch Frontend
 
-## Getting Started
+A modern, animated Next.js frontend for the JobWatch job tracking application. Features real-time job tracking, application management, and interactive dashboards with smooth Framer Motion animations.
 
-First, run the development server:
+## 🚀 Quick Start
 
+### Prerequisites
+- Node.js 24+
+- npm or yarn
+- Backend Flask server running on `localhost:5000`
+
+### Development
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+### Production Build
+```bash
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── dashboard/          # Dashboard with statistics
+│   ├── jobs/               # Job listings page
+│   ├── applications/       # Application tracking
+│   ├── settings/           # User settings
+│   ├── layout.tsx          # Root layout
+│   └── page.tsx            # Home page
+├── components/             # Reusable React components
+│   └── MenuVertical.tsx    # Animated navigation
+└── lib/
+    └── api.ts              # Backend API client
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Technology Stack
 
-## Learn More
+| Category | Tools |
+|----------|-------|
+| **Framework** | Next.js 16 (App Router) |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS |
+| **Animations** | Framer Motion, Paper Design Shaders |
+| **Icons** | Lucide React |
+| **Backend** | Flask API |
+| **Deployment** | Docker + Render |
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🎨 Smooth animations with Framer Motion
+- 📊 Interactive job dashboard
+- 🔍 Smart search and filtering
+- 📱 Fully responsive design
+- 🌊 Dynamic shader background animations
+- 🐳 Docker deployment ready
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📡 Backend Integration
 
-## Deploy on Vercel
+Connects to Flask API on port 5000:
+- `GET /api/jobs` - Fetch job listings
+- `GET /api/stats` - Dashboard statistics
+- `POST /api/jobs/<id>/applied` - Mark as applied
+- `POST /api/cv/process` - Process CV uploads
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🐳 Docker & Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Build locally:
+```bash
+docker build -t jobwatch-frontend .
+docker run -p 3000:3000 jobwatch-frontend
+```
+
+Deploy to Render:
+```bash
+git push origin main
+# Auto-deploys via render.yaml
+```
+
+## 📝 Environment Variables
+
+Create `.env.local`:
+```
+NEXT_PUBLIC_API_URL=http://localhost:5000
+```
+
+## 🧹 Commands
+
+| Command | Purpose |
+|---------|----------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm start` | Production server |
+| `npm run lint` | Run ESLint |
+
+## 📄 License
+
+MIT
